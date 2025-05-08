@@ -15,34 +15,9 @@
       scroll-behavior: smooth;
       transition: background-color 0.3s, color 0.3s;
     }
-
-    .mars-fly {
-      position: fixed;
-      top: 15%;
-      left: 60%;
-      width: 70px;
-      height: 70px;
-      z-index: 50;
-      animation: orbit 25s linear infinite;
-      pointer-events: none;
-    }
-
-    @keyframes orbit {
-      0% {
-        transform: translate(-50%, 0) rotate(0deg) translateX(180px) rotate(0deg);
-      }
-      100% {
-        transform: translate(-50%, 0) rotate(360deg) translateX(180px) rotate(-360deg);
-      }
-    }
   </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-
-  <!-- Flying Mars Object -->
-  <div class="mars-fly">
-    <img src="https://i.ibb.co/NLg45t7/mars-icon.png" alt="Flying Mars" class="w-full h-full object-contain">
-  </div>
+<body class="bg-black text-white">
 
   <!-- Header -->
   <header class="p-6 flex items-center justify-between bg-gray-800 shadow-lg">
