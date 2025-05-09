@@ -55,6 +55,18 @@
     <a href="#data" class="px-6 py-3 bg-red-500 text-white rounded-xl hover:bg-red-600 transition-all" data-lang="sq" hidden>Fillo Eksplorimin</a>
   </section>
 
+  <!-- Kahoot Button Section -->
+  <section class="py-10 text-center bg-gray-900">
+    <h3 class="text-2xl font-bold text-red-400 mb-4" data-lang="en">Test Your Mars Knowledge</h3>
+    <h3 class="text-2xl font-bold text-red-400 mb-4" data-lang="sq" hidden>Testo Njohuritë për Marsin</h3>
+    <a href="https://kahoot.it/challenge/06934295?challenge-id=10e0e601-265a-4649-8914-e6e210d91cba_1746781045186" target="_blank" class="inline-block px-6 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all">
+      Play the Mars Quiz
+    </a>
+    <a href="https://kahoot.it/challenge/06934295?challenge-id=10e0e601-265a-4649-8914-e6e210d91cba_1746781045186" target="_blank" class="inline-block px-6 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all" hidden data-lang="sq">
+      Luaj Kuizin për Marsin
+    </a>
+  </section>
+
   <!-- Data Section -->
   <section id="data" class="py-20 bg-gray-950 text-center px-4">
     <h3 class="text-3xl font-bold mb-8 text-red-400" data-lang="en">Mars Data Insights</h3>
@@ -96,23 +108,4 @@
     <h3 class="text-3xl font-bold mb-4 text-red-400" data-lang="en">About This Project</h3>
     <h3 class="text-3xl font-bold mb-4 text-red-400" data-lang="sq" hidden>Rreth Këtij Projekti</h3>
     <p class="text-gray-400 max-w-2xl mx-auto" data-lang="en">Mars AI Explorer is a student-led initiative that combines curiosity about space with the power of artificial intelligence. Our goal is to make Mars data more accessible and fun to explore.</p>
-    <p class="text-gray-400 max-w-2xl mx-auto" data-lang="sq" hidden>Mars AI Explorer është një nismë e drejtuar nga nxënës që kombinon kureshtjen për hapësirën me fuqinë e inteligjencës artificiale. Qëllimi ynë është të bëjmë të dhënat e Marsit më të qasshme dhe më argëtuese.</p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-center p-6 text-gray-400">
-    <p>© 2025 Mars AI Explorer • Built with Tailwind CSS • Powered by Open Curiosity</p>
-  </footer>
-
-  <!-- Language Switcher Script -->
-  <script>
-    document.getElementById("languageSwitch").addEventListener("change", function () {
-      const lang = this.value;
-      document.querySelectorAll("[data-lang]").forEach(el => {
-        el.hidden = el.getAttribute("data-lang") !== lang;
-      });
-    });
-  </script>
-
-</body>
-</html>
+    <p class="text-gray-400 max-w-2xl mx-auto" data-lang="sq" hidden>Mars AI Explorer është një nismë e drejtuar nga nxënës që kombinon kureshtjen për hapësirën me fuqinë e inteligjencës artificiale. Qëllimi ynë është të bëjmë të dhënat e Mars
