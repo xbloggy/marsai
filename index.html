@@ -65,14 +65,40 @@
   <section class="py-10 text-center bg-gray-900 bg-opacity-90">
     <h3 class="text-2xl font-bold text-red-400 mb-4" data-lang="en">Test Your Mars Knowledge</h3>
     <h3 class="text-2xl font-bold text-red-400 mb-4" data-lang="sq" hidden>Testo Njohuritë për Marsin</h3>
-    <a href="https://kahoot.it/challenge/06934295?challenge-id=10e0e601-265a-4649-8914-e6e210d91cba_1746781045186" target="_blank" class="inline-block px-6 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all">
-      Play the Mars Quiz
-    </a>
-    <a href="https://kahoot.it/challenge/06934295?challenge-id=10e0e601-265a-4649-8914-e6e210d91cba_1746781045186" target="_blank" class="inline-block px-6 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all" hidden data-lang="sq">
-      Luaj Kuizin për Marsin
-    </a>
+    <a href="https://kahoot.it/challenge/06934295?challenge-id=10e0e601-265a-4649-8914-e6e210d91cba_1746781045186" target="_blank" class="inline-block px-6 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all" data-lang="en">Play the Mars Quiz</a>
+    <a href="https://kahoot.it/challenge/06934295?challenge-id=10e0e601-265a-4649-8914-e6e210d91cba_1746781045186" target="_blank" class="inline-block px-6 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 transition-all" hidden data-lang="sq">Luaj Kuizin për Marsin</a>
   </section>
 
-  <!-- Continue with other sections as before -->
+  <!-- About Section -->
+  <section id="about" class="py-12 px-6 bg-black bg-opacity-80 text-white text-center">
+    <h2 class="text-4xl font-bold text-red-400 mb-6" data-lang="en">About Us - Next Home</h2>
+    <h2 class="text-4xl font-bold text-red-400 mb-6" data-lang="sq" hidden>Për Ne - Next Home</h2>
+
+    <p class="max-w-4xl mx-auto text-lg text-gray-300 leading-relaxed" data-lang="sq">
+      Heej! Ktu jena Next Home, nje grup nxensash nga Shkolla 9 vjecare Omiros qe s’rrin rehat. Kemi ba dicka qe na duket si nga nje planet tjeter – nje AI per Marsin dhe ca website si stacioni yne hapinor online.
+      <br><br>
+      Gjithcka nisi si projekt shkolle, por nuk e lam vec aty. I dham gaz, qysh me ide e deri te kodimi e dizajni. Me shume mund, edhe ca gabime n'fillim (se s’jemi robota), arritem me bo nje AI qe jo vetem flet, po kupton edhe kur thua gjona kot.
+      <br><br>
+      Puna jon s’ka qene perfekte – ndonjehere harrojme si bohen gjonat, ose fap na prishet faqja – po s’ka gjo, se cdo here mesojme. S’jemi shkencetare, por jena t’gatshem me ec perpara. Po provojme me permiresu, me i bo gjonat me cool, edhe me i shtu me shume ide kreative.
+      <br><br>
+      Ky projekt per ne s’ka qene vec detyre shkolle. Ishte nje aventure. Prej njerzish te thjeshte, prej klases 7 apo 8, qe nuk e lane mendjen vetem te TikToku. Po, perdorem AI, po gjithcka u ba me pasion dhe me nerva (po edhe me shume qeshje kur nuk funksiononte).
+      <br><br>
+      Kjo eshte Next Home – vendi ku Marsi takohet me mendjen tone. Shpresojme t’ju pelqeje ajo qe kemi kriju. Jena hala duke mesu, po kemi deshiren me bo dicka ndryshe.
+      <br><br>
+      <strong>Grupi Next Home</strong><br>
+      Me dashni, mund, pak crregullsi... edhe shume stil.
+    </p>
+  </section>
+
+  <script>
+    const switcher = document.getElementById('languageSwitch');
+    switcher.addEventListener('change', () => {
+      const selected = switcher.value;
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.hidden = el.getAttribute('data-lang') !== selected;
+      });
+    });
+  </script>
+
 </body>
 </html>
